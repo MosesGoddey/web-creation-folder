@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="navigation">
+    <div class="logo">
+      <img id="logo-image" src="data:image/png;base64,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" height="70px" width="70px" alt="restaurant logo">
+      <h3>CLASSIC RESTAURANT</h3>
+    </div>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    
+  </div>
+
+ <div id="carouselExampleDark" class="carousel carousel-light slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img style="opacity: 0.8" src="https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg" class="d-block w-100" height="500px" width="100px" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       <div class="text-center">
+         <p style="font-size: 30px;">ENJOY THE BEST DINING EXPERIENCE WITH US.</p>
+        <h5 style="font-size: 70px; font-weight: 500px;">Welcome to Our Restaurant</h5>
+        <button class="button1">Try it today</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <!-- <img style="opacity: 0.8" src="https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg" class="d-block w-100" height="500px" width="100%" alt="..."> -->
+      <img style="opacity: 0.8" src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" height="500px" width="100%" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        
+        <p style="font-size: 30px;">EXPERIENCE THE FINEST CUISINE CRAFTED WITH LOVE.</p>
+        <h5 style="font-size: 70px; font-weight: 500px;">Enjoy Your Meal</h5>
+        <button class="button2">Try it today</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- <img style="opacity: 0.8" src="images/third slide image.jpeg" class="d-block w-100" height="500px" width="100%" alt="..."> -->
+      <img style="opacity: 0.8" src="https://images.unsplash.com/photo-1586999768265-24af89630739?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D" class="d-block w-100" height="500px" width="100%" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+         <p style="font-size: 30px;">WIDE RANGE OF DELICIOUS DISHES</p>
+        <h5 style="font-size: 70px; font-weight: 500px;">customer's satisfaction</h5>
+       <button class="button3">Try it today</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    
+  </button>
+  </div>
+      <!-- <p>Welcome to our restaurant, where we prioritize customer satisfaction above all else. Our team is dedicated to providing you with an exceptional dining experience, ensuring that every visit is memorable.</p>
+    <p>From the moment you step through our doors, you'll be greeted with warm hospitality         -->
+    <!-- <p>We are committed to providing the best dining experience with a focus on quality and customer satisfaction.</p>
+    <p>Our restaurant offers a wide range of delicious dishes made from the freshest ingredients, ensuring that every meal is a delightful experience. Whether you're here for a casual lunch or a special dinner, our team is dedicated to making your visit memorable.</p>
+    <p>Join us today and discover why we are the preferred choice for food lovers.</p>
+     -->
+    
+          
+  <!-- <button>Taste today</button> -->
+   
+<div class="below-carousel">
+   
+    <i class="fa-solid fa-handshake"></i>
+    <h3>Welcome to Our Restaurant</h3>
+    
+    <i class="fa-solid fa-utensils"></i>
+    <h3>customer's satisfaction</h3>
+    <i class="fa-solid fa-calendar-day"></i>
+    <h3>Join us today</h3>
+
+</div> 
+  <!-- <div class="about-us-container"> -->
+   <h2 class="about-us">About us</h2>
+    <!-- <div class="card-container1"> -->
+      <!-- <div class="clearfix"></div> -->
+    <div class="flex-container">   
+      <div class="card1">
+        <img src="https://images.unsplash.com/photo-1665332195309-9d75071138f0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="rice image" width="370px" height="300px">
+        <div class="card1-text">
+        <h2>our story</h2>
+        <p>Classic Restaurant was founded in 2022 in the heart of Old Airport, 
+        Jos, with a passion to celebrate the rich and diverse flavors of African cuisine. What started 
+        as a humble idea has grown into a favorite spot for families, food lovers, and visitors looking for authentic African dishes served with love.
+        Every meal we prepare is a reflection of our culture, tradition, and hospitality  because here, food is more than a dish, it’s a story.</p>
+        <button class="card1-button">Dine with us</button>
+        </div>
+      </div>
+    
+     
+      <div class="card2">
+        <img src="https://plus.unsplash.com/premium_photo-1683147709907-4348f2d7f56d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="restaurant image" width="370px" height="300px">
+        <div class="card2-text">
+          <h2>our philosophy</h2>
+          <p>At Classic Restaurant, we believe food should bring comfort, joy, and connection. We use only the freshest local ingredients to create traditional African meals that honor the flavors passed down through generations. Our goal is not just to serve you, but to give you a classic, home-cooked experience one plate at a time, our priority is reaching customers satisfaction, and making sure they dine a food that taste better</p>
+          <button class="card2-button">Explore our menu</button>
+        </div>
+        </div>
+        
+       <div class="card3">
+        
+        <img src="https://media.istockphoto.com/id/2184333497/photo/two-interracial-supervisors-scrolling-and-smiling-at-tablet-at-food-factory.jpg?s=2048x2048&w=is&k=20&c=WYsdU7xI3KcP99G1jFvQ3-sMVXrbHzOs7hP13mDSLIU=" alt="" height="300px" width="370px">
+        <div class="card3-text">
+          <h2>meet the team</h2>
+          <p>Our team is a blend of culinary experts and passionate food lovers who share a common goal, to create unforgettable dining experiences. From our chefs who craft each dish with care, to our friendly staff who ensure you feel at home, we are dedicated to making your visit special.
+          Our strength lies in our team passionate chefs, warm-hearted servers, and dedicated staff who bring Classic Restaurant to life every day.</p>
+          <button class="card3-button">Meet our team</button>
+        </div>
+      </div>
+       </div> 
+    
+
+  
+ 
+
+
+<div class="faq-section">
+<h1 style="text-align: center; margin-top: 400px; margin-bottom: 100px;">Frequently asked questions</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What kind of dishes do you serve?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <!-- <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+       -->
+      At Classic Restaurant, we specialize in authentic African cuisine, especially dishes from Nigeria and surrounding regions. Our menu features meals like jollof rice, pounded yam with egusi soup, suya, nkwobi, and fresh catfish pepper soup. We also offer continental options and chef’s specials to suit all taste buds.
+      
+      
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Do you offer home delivery or takeout services?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <!-- <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+       -->
+        Yes, we offer both home delivery and takeout options within Old Airport Jos and nearby areas. Orders can be placed via phone, WhatsApp, or through our online ordering platform. We ensure timely delivery while keeping your meals hot and fresh. Delivery fees may vary depending on your location.
+
+
+      
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Can I host events or make reservations at your restaurant?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <!-- <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+       -->
+        Absolutely! Classic Restaurant is perfect for birthdays, private dinners, business lunches, or cultural celebrations. We accept table reservations and event bookings. You can also request custom decoration and catering services. Please contact us at least 24 hours in advance for special arrangements.
+
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br><br>
+
+
+<footer class="footer">&copy Copywright 2025. All right reserved</footer>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+https://plus.unsplash.com/premium_photo-1670692695578-319f28b97ac1?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+https://plus.unsplash.com/premium_photo-1661380288410-d04d29965f0d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+https://plus.unsplash.com/premium_photo-1683147709907-4348f2d7f56d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+https://media.istockphoto.com/id/2184333497/photo/two-interracial-supervisors-scrolling-and-smiling-at-tablet-at-food-factory.jpg?s=2048x2048&w=is&k=20&c=WYsdU7xI3KcP99G1jFvQ3-sMVXrbHzOs7hP13mDSLIU= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>

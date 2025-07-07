@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#logo-image {
+      padding: 8px;
+      margin-left: 50px;
+    }
+.logo {
+      /* display: flex;  */
+      align-items: center;
+      display: inline-block;
+    }
+.logo > h3 {
+      display: inline-block;
+      /* margin-top: 30px; */
+      color: white;
+    }
+
+ .navigation {
+    /* background-color: rgb(91, 92, 92); */
+    background-color: rgb(44, 50, 50);
+ }
+
+ ul {
+    float: right;
+    color: white;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    list-style: none;
+    
+ }
+
+ .nav-links a { 
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+ }
+
+ .nav-links a:hover {
+   color:white;
+ }
+
+ .button1, .button2, .button3 {
+   /* background-color: rgb(25, 25, 88); */
+   background-color: rgb(47, 19, 141);
+   padding: 8px 12px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   font-size: 20px;
+   /* font-weight: bold; */
+ }
+
+ .below-carousel {
+    display: flex;
+    background-color: rgba(11, 253, 253,0.2);
+}
+ .below-carousel > h3 {
+    margin: 70px 70px 70px 30px;
+    /* color: white; 
+    align-items: center;
+     height: 200px;
+    line-height: 200px; */
+} 
+
+  .below-carousel .fa-solid {
+  font-size: 40px;
+  margin-top: 80px;
+  color: #2d0e0e;
+  margin-left: 90px;
+ } 
+  /* align-items: center; */
+  /* margin-top: 50px; */
+
+
+
+
+ 
+    
+   /* .fa-solid.fa-handshake {
+    font-size: 50px;
+    color: rgb(47, 19, 141);
+    margin: 70px;
+    display:inline-flex ; 
+  }   */
+  
+  .about-us {
+      text-align: center;
+      margin-top: 70px;
+     }
+     /* .card-container1 {
+      display: block;
+     } */
+
+     .card1, .card2, .card3 {
+      /* display: flex; */
+      width: 370px;
+      height: 400px;
+      margin: 20px;
+      /* margin-bottom: 50px; */
+
+     }
+     .card1-text, .card2-text, .card3-text {
+      border: 1px solid rgb(171, 167, 183);
+      border-top: none;
+      padding: 20px;
+      /* margin: 20px; */
+     }
+     .card1-button, .card2-button, .card3-button {
+      text-align: center;
+      background-color: rgb(47, 19, 141);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 5px;
+      border: none;
+      margin-left: 20px;
+      margin-bottom: 15px;
+     }
+     /* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+ .flex-container {
+  display: flex;
+ }
+
+ .faq-section {
+  width: 800px;
+  margin: 0 auto;
+ }
+
+ .footer {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 20px;
+  /* background-color: rgb(121, 172, 172); */
+   /* background-color: rgb(98, 144, 144); */
+   background-color: rgb(103, 139, 154);
+  /* color: white; */
+  font-size: 22px;
+  width: 1200px;
+  margin: 0 auto;
+  height: 170px;
+  line-height: 120px;
+  align-items: center;
+ }
